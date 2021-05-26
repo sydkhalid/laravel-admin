@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3d88fa6639c9463d85260309c03bb68",
+    "content-hash": "1d04ee8688438969b03b84838c030f21",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4545,6 +4545,59 @@
             "time": "2020-07-13T06:12:54+00:00"
         },
         {
+            "name": "vectorcoder/laravel-installer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vectorcoder/laravel-installer.git",
+                "reference": "ed31f91816051da00dcab8aae9ea7bcd272f12f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vectorcoder/laravel-installer/zipball/ed31f91816051da00dcab8aae9ea7bcd272f12f9",
+                "reference": "ed31f91816051da00dcab8aae9ea7bcd272f12f9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Vectorcoder\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vectorcoder\\LaravelInstaller\\": "src/"
+                },
+                "files": [
+                    "src/Helpers/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Saqib Ali",
+                    "email": "mobileapps.vectorcoder@gmail.com",
+                    "homepage": "https://github.com/vectorcoder/laravel-installer",
+                    "role": "Manager"
+                }
+            ],
+            "description": "Laravel web installer",
+            "support": {
+                "issues": "https://github.com/vectorcoder/laravel-installer/issues",
+                "source": "https://github.com/vectorcoder/laravel-installer/tree/master"
+            },
+            "time": "2021-03-30T14:00:41+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v4.2.0",
             "source": {
@@ -7011,7 +7064,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "vectorcoder/laravel-installer": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

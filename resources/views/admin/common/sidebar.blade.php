@@ -34,11 +34,23 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <li class="nav-item menu-open">
-                <a href="#" class="nav-link active">
-                  <i class="nav-icon fas fa-tachometer-alt"></i>
+              <li class="nav-item">
+                <div class="pull-right">
+                  </div>
+                  <a href="{{ URL::to('admin/dashboard')}}" class="nav-link {{ Request::is('admin/dashboard') ? 'active' : '' }}">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>
-                    Dashboard
+                    {{ trans('labels.dashboard') }}
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <div class="pull-right">
+                  </div>
+                <a href="{{ URL::to('admin/admins')}}" class="nav-link {{ Request::is('admin/admins') ? 'active' : '' }}">
+                  <i class="nav-icon fas fa-users"></i>
+                  <p>
+                    {{ trans('labels.manage_admin') }}
                     <i class="right fas fa-angle-left"></i>
                   </p>
                 </a>

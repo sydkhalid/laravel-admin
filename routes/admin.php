@@ -25,6 +25,9 @@ Route::group(['middleware' => ['installer']], function () {
         Route::post('verifylogin', 'LoginController@verifyLogin');
         Route::get('/dashboard', 'LoginController@dashboard');
         Route::get('/logout', 'LoginController@logout');
+        //administration
+        Route::get('/admins', 'AdminController@index');
+        Route::get('/addadmins', 'AdminController@addAdmin');
     });
 });
 

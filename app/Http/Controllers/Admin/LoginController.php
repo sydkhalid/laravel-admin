@@ -47,12 +47,12 @@ class LoginController extends Controller
     }
     // dashboard
     public function dashboard(Request $request){
-        return view("admin.dashboard");
+        $title = array('Title' => Lang::get("labels.dashboard"));
+        return view("admin.dashboard",$title);
     }
     //logout
 	public function logout(){
 		$logout = Auth::guard('admin')->logout();
-        dd($logout);
 		return redirect()->intended('admin/login');
 	}
 }

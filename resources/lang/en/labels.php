@@ -31,5 +31,6 @@ return [
     'delete' => 'Delete',
     'addadmins' => 'Add Admin',
     'editadmins' => 'Edit Admin',
+    'menu' => 'Menus'
 
 ];

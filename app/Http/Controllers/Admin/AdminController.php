@@ -27,7 +27,6 @@ class AdminController extends Controller
 		$admins = DB::table('users')
 			->leftJoin('user_types','user_types.user_types_id','=','users.role_id')
 			->select('users.*','user_types.*')
-			// ->where('users.role_id','>','10')
 			->paginate(50);
 		$result['message'] = $message;
 		$result['errorMessage'] = $errorMessage;

@@ -28,6 +28,9 @@ Route::group(['middleware' => ['installer']], function () {
         //administration
         Route::get('/admins', 'AdminController@index');
         Route::get('/addadmins', 'AdminController@addAdmin');
+        Route::resource('menus', MenuController::class);
+        //consent
+        Route::resource('settings', SettingController::class);
     });
 });
 
